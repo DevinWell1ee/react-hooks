@@ -11,12 +11,11 @@ function App() {
     <Fragment>
       <input
         type="text"
-        value='redux'
         ref={ref}
       />
 
       <button type="button" onClick={() =>
-        setUrl(`http://hn.algolia.com/api/v1/search?query=${ref.current.target.value}`)
+        setUrl(`http://hn.algolia.com/api/v1/search?query=${ref.current.value}`)
       }>
         Search
       </button>
