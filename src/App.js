@@ -26,8 +26,9 @@ function App() {
   const f = useRef()
 
 
+  // ! 函数组件被调用 -> 执行代码 ->根据return的JSX渲染DOM -> 执行useEffect
   // ! useEffect
-  // 可以把 useEffect 看做 componentDidMount ， componentDidUpdate 和 componentWillUnmount 这三个函数的组合
+  // ! 可以把 useEffect 看做 componentDidMount ， componentDidUpdate 和 componentWillUnmount 这三个函数的组合
   useEffect(() => {
     console.log('hello')
 

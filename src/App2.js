@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useState, useMemo } from 'react'
 
 import Button from './Button'
 
@@ -17,6 +17,7 @@ function App() {
     };
   }, [count]); */
 
+  // ! 对于函数式组件来说，每次useState都会造成整个函数的重新渲染，逻辑从上到下重新执行一遍
   const handleClickButton1 = () => {
     setCount1(count1 + 1);
   };
